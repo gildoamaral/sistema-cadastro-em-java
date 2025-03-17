@@ -58,7 +58,7 @@
             <label>CEP:</label>
             <input required type="text" class="form-control" id="cep" th:field="*{cep}">
 
-            <label>Cidade:</label>
+            <label>Estado:</label>
             <select required th:field="*{estado}" class="form-control">
                 <option th:each="est : ${listaEstados}" th:value="${est.id}" th:text="${est.nome}"></option>
             </select>
